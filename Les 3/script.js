@@ -28,10 +28,12 @@
     
     
     function makeThisSentence(){
-        let index = randomizer(arrayLength);
-        let woord1 = onderwerp[index];
-        let woord2 = werkwoord[index];
-        let woord3 = restwoord[index];
+        let onder = randomizer(arrayLength);
+        let werk = randomizer(arrayLength2);
+        let rest = randomizer(arrayLength3);
+        let woord1 = onderwerp[onder];
+        let woord2 = werkwoord[werk];
+        let woord3 = restwoord[rest];
         let outputString = woord1 + " " + woord2 + " " + woord3;
         return outputString;
     }
@@ -52,9 +54,14 @@
     
     
     
-    const onderwerp = ["she", "Ed", "Rosmerta"];
-    const werkwoord = ["walks", "learns", "drinks"];
-    const restwoord = ["hard", "at school", "coffee"];
-        
+    const onderwerp = ["Ik", "Jij", "Het"];
+    const werkwoord = ["eet", "zoekt", "vind"];
+    const restwoord = ["appel", "thuis", "taart"];
+    
+
+
     let plaatjes = ["https://cdn.pixabay.com/photo/2018/07/09/17/44/baby-elephant-3526681__340.png", "https://www.how-to-draw-funny-cartoons.com/images/cartoon-baby-007.jpg", "https://thumbs.dreamstime.com/b/smiling-heart-cartoon-open-arms-nice-image-all-projects-love-representing-version-its-suggest-idea-40930153.jpg", "https://observer.com/wp-content/uploads/sites/2/2020/05/yoda-art-observer.jpg?quality=80"]
+
     let arrayLength = onderwerp.length;
+    let arrayLength2 = werkwoord.length;
+    let arrayLength3 = restwoord.length;
