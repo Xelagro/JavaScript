@@ -90,13 +90,14 @@ function finishQuiz() {
   questionBox.style.display = "none";
   resultBox.style.display = "block";
   quizWrapper.style.background = "silver";
-  setTimeout(() => {  console.log("Next Quiz"); }, 2000);
-  if(quizNummer == 2){
-    resultBox.innerHTML = "<h2>Jouw resultaat <br>goede antwoorden " + playerData.goodAnswers + "<br>foute antwoorden " + playerData.wrongAnswers + "</h2>";
-  }
-  else {
+  resultBox.innerHTML = "<h2>Jouw resultaat <br>goede antwoorden " + playerData.goodAnswers + "<br>foute antwoorden " + playerData.wrongAnswers + "</h2>";
+  setTimeout(() => {  console.log("Next Quiz"); 
+  if(quizNummer != 2){
     init()
   }
+
+  }, 2000);
+
 }
 
 init(); // start it
